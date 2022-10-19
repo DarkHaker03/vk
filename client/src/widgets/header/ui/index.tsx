@@ -1,16 +1,15 @@
 // icons
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { CiMusicNote1 } from 'react-icons/ci';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { IoMdNotificationsOutline } from 'react-icons/io';
 
-import style from './styles.module.scss';
-
 // ui
+import { Icon } from 'shared/icon';
 import { Logo } from './logo';
 import { Search } from './search';
-import { Icon } from '../../../shared/icon';
 import { Nav } from './nav';
+
+// styles
+import style from './styles.module.scss';
 
 interface Props {
     showSearch?: boolean;
