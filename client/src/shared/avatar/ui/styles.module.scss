@@ -1,0 +1,9 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &Image {
+    border-radius: 50%;
+  }
+}
