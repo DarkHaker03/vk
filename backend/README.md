@@ -75,6 +75,7 @@
 
 test
 Training merge
+6. TEST: ПРОВЕРКА 
 
 
-
+cool
