@@ -15,37 +15,37 @@ const links = [
     id: 1,
     title: 'Моя страница',
     url: '/profile',
-    icon: <CgProfile />,
+    icon: <CgProfile size={25} />,
   },
   {
     id: 2,
     title: 'Новости',
     url: '/news',
-    icon: <TbNewSection />,
+    icon: <TbNewSection size={25} />,
   },
   {
     id: 3,
     title: 'Мессенджер',
     url: '/messages',
-    icon: <BiMessageRounded />,
+    icon: <BiMessageRounded size={25} />,
   },
   {
     id: 4,
     title: 'Друзья',
     url: '/friends',
-    icon: <FaUserFriends />,
+    icon: <FaUserFriends size={25} />,
   },
   {
     id: 5,
     title: 'Сообщества',
     url: '/groups',
-    icon: <HiOutlineUserGroup />,
+    icon: <HiOutlineUserGroup size={25} />,
   },
   {
     id: 6,
-    title: 'Photos',
+    title: 'Фотографии',
     url: '/photos',
-    icon: <MdOutlineInsertPhoto />,
+    icon: <MdOutlineInsertPhoto size={25} />,
   },
 ];
 
@@ -56,7 +56,9 @@ const SideBar = () => (
         <li className={style.asideLinksItem}>
           <Link url={link.url} className={style.asideLinksItemContent} key={link.id}>
             {link.icon}
-            {link.title}
+            <span className={style.asideLinksItemContentTitle}>
+              {link.title}
+            </span>
           </Link>
         </li>
       ))}

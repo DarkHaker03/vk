@@ -1,16 +1,16 @@
+@import "src/shared/styles/variables";
+
 .aside {
   width: 164px;
-  margin-left: 100px;
-  padding: 15px 0 10px;
+  padding: 0 0 10px;
   //margin-top: 48px;
   height: 100vh;
   overflow: hidden;
-  background-color: #141414;
+  font-size: 13px;
 
   &Links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     width: 100%;
     padding: 0 0 0 5px;
   }
@@ -19,9 +19,21 @@
     list-style-type: none;
 
     &Content {
+      height: 30px;
       display: flex;
       gap: 10px;
+      color: $sidebar-text;
       align-items: center;
+      border-radius: 5px;
+
+      &Title {
+        width: 100%;
+        line-height: 30px;
+      }
+
+      &:hover {
+        background-color: $hover-text-color;
+      }
     }
   }
 }

@@ -12,16 +12,15 @@ import { Nav } from './nav';
 import style from './styles.module.scss';
 
 interface Props {
-    showSearch?: boolean;
     showLoginVersion?: boolean;
 }
 
-export const Header = ({ showSearch = true, showLoginVersion = false }: Props) => (
+export const Header = ({ showLoginVersion = false }: Props) => (
   <header className={style.header}>
     <div className={style.headerWrapper}>
       <div className={style.headerContent}>
         <Logo />
-        {showSearch && <Search />}
+        <Search />
         {!showLoginVersion && (
           <>
             <Icon className={style.headerNotify}>
@@ -32,9 +31,9 @@ export const Header = ({ showSearch = true, showLoginVersion = false }: Props) =
                 <CiMusicNote1 size={24} fill="gray" />
               </Icon>
             </div>
+            <Nav />
           </>
         )}
-        { !showLoginVersion && <Nav /> }
       </div>
     </div>
   </header>
