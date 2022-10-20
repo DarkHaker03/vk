@@ -72,6 +72,6 @@
     </br>Return: 200 OK ; Deleted: + int numbers of delete
     </br>Else: 404 NOT FOUND
 
-
+6. TEST: ПРОВЕРКА 
 
 
