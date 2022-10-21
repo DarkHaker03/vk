@@ -1,4 +1,4 @@
-import { Link } from 'shared/link';
+import { Link } from 'shared/ui/link';
 
 // icons - fix
 import { BiMessageRounded } from 'react-icons/bi';

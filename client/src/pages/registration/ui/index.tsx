@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import vkIcon from "../../../shared/icon/ui/vk.png";
 import Button from "shared/ui/button";
 import Input from "shared/ui/input";
+
+import vkIcon from "shared/assets/img/vk.png";
+import styles from "./styles.module.scss";
 
 const Registration = () => (
   <div className={styles.registration}>
