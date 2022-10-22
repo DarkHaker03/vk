@@ -5,10 +5,10 @@ import clsx from "clsx";
 interface Props {
   children: React.ReactNode;
   className: string;
-  onClick?: () => void;
+  onClick?: (e: React.SyntheticEvent<HTMLFormElement>) => void;
 }
 
-const Button = ({ children, className }: Props) => {
+const Button = ({ children, className, onClick}: Props) => {
   return (
     <button className={clsx(styles.btn, styles[className])}>{children}</button>
   );
