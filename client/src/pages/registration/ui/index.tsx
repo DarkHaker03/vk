@@ -13,14 +13,16 @@ const Registration = () => (
         Ваша почта будет использоваться для входа в аккаунт
       </p>
       <form className={styles.form}>
-        <Input className="formInput" type="email" placeholder="Введите ваш Email" />
+        <Input
+          className="formInput"
+          type="email"
+          placeholder="Введите ваш Email"
+        />
         <Button className="mainBtn">продолжить</Button>
       </form>
       <p className={styles.warningText}>
-        <span>Нажимая &quot;Продолжить&quot; вы принимаете</span>
-        {' '}
-        пользовательское
-        соглашение и политику конфедициальности
+        <span>Нажимая &quot;Продолжить&quot; вы принимаете</span>{' '}
+        пользовательское соглашение и политику конфедициальности
       </p>
     </div>
   </div>

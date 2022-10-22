@@ -11,9 +11,7 @@ interface Props extends React.HTMLProps<HTMLInputElement> {
   placeholder: string;
 }
 
-const Input = ({
-  className, type, onChange, placeholder,
-}: Props) => (
+const Input = ({ className, type, onChange, placeholder }: Props) => (
   <input
     placeholder={placeholder}
     onChange={onChange}
