@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
+import styles from './styles.module.scss';
 
 interface Props {
   children: React.ReactNode;
@@ -8,10 +8,14 @@ interface Props {
   onClick?: () => void;
 }
 
-const Button = ({ children, className }: Props) => {
-  return (
-    <button className={clsx(styles.btn, styles[className])}>{children}</button>
-  );
-};
+const Button = ({ children, className, onClick }: Props) => (
+  <button
+    onClick={onClick}
+    className={clsx(styles.btn, styles[className])}
+    type="button"
+  >
+    {children}
+  </button>
+);
 
 export default Button;

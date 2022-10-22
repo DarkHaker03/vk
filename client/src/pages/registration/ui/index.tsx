@@ -1,8 +1,8 @@
-import Button from "shared/ui/button";
-import Input from "shared/ui/input";
+import Button from 'shared/ui/button';
+import Input from 'shared/ui/input';
 
-import vkIcon from "shared/assets/img/vk.png";
-import styles from "./styles.module.scss";
+import vkIcon from 'shared/assets/img/vk.png';
+import styles from './styles.module.scss';
 
 const Registration = () => (
   <div className={styles.registration}>
@@ -17,7 +17,9 @@ const Registration = () => (
         <Button className="mainBtn">продолжить</Button>
       </form>
       <p className={styles.warningText}>
-        <span>Нажимая "Продолжить" вы принимаете</span> пользовательское
+        <span>Нажимая &quot;Продолжить&quot; вы принимаете</span>
+        {' '}
+        пользовательское
         соглашение и политику конфедициальности
       </p>
     </div>
