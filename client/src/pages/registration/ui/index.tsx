@@ -1,31 +1,36 @@
-import Button from 'shared/ui/button';
-import Input from 'shared/ui/input';
+import React from 'react';
+import MainForm from './MainForm';
 
-import vkIcon from 'shared/assets/img/vk.png';
-import styles from './styles.module.scss';
-
-const Registration = () => (
-  <div className={styles.registration}>
-    <div className={styles.registrationBlock}>
-      <img className={styles.vkIcon} src={vkIcon} alt="vk icon" />
-      <h1 className={styles.title}>Введите почту</h1>
-      <p className={styles.subTitle}>
-        Ваша почта будет использоваться для входа в аккаунт
-      </p>
-      <form className={styles.form}>
-        <Input
-          className="formInput"
-          type="email"
-          placeholder="Введите ваш Email"
-        />
-        <Button className="mainBtn">продолжить</Button>
-      </form>
-      <p className={styles.warningText}>
-        <span>Нажимая &quot;Продолжить&quot; вы принимаете</span>{' '}
-        пользовательское соглашение и политику конфедициальности
-      </p>
-    </div>
-  </div>
+const warningText = (
+  <p>
+    <span>Нажимая &quot;Продолжить&quot; вы принимаете</span> пользовательское
+    соглашение и политику конфедициальности
+  </p>
 );
+
+const Registration = () => {
+  const [nextStep, setNextStep] = React.useState<boolean>(false);
+
+  const handleNextStep = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    // console.log(13);
+  };
+
+  return nextStep ? (
+    <MainForm
+      title="Введите пароль"
+      palceholder="Введите пароль"
+      subTitle="Введите ваш текущий пароль привязанный к email"
+    />
+  ) : (
+    <MainForm
+      fc={handleNextStep}
+      title="Введите почту"
+      palceholder="Введите email"
+      subTitle="Ваша почта будет использоваться для входа в аккаунт"
+      warningText={warningText}
+    />
+  );
+};
 
 export { Registration };
