@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import clsx from "clsx";
+import React from 'react';
+import clsx from 'clsx';
+import styles from './styles.module.scss';
 
-type InputType = "text" | "email" | "password" | "tel" | "number";
+type InputType = 'text' | 'email' | 'password' | 'tel' | 'number';
 
 interface Props extends React.HTMLProps<HTMLInputElement> {
   className: string;
@@ -11,15 +11,13 @@ interface Props extends React.HTMLProps<HTMLInputElement> {
   placeholder: string;
 }
 
-const Input = ({ className, type, onChange, placeholder }: Props) => {
-  return (
-    <input
-      placeholder={placeholder}
-      onChange={onChange}
-      type={type}
-      className={clsx(styles[className])}
-    />
-  );
-};
+const Input = ({ className, type, onChange, placeholder }: Props) => (
+  <input
+    placeholder={placeholder}
+    onChange={onChange}
+    type={type}
+    className={clsx(styles[className])}
+  />
+);
 
 export default Input;

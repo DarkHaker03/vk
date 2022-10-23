@@ -1,7 +1,7 @@
 import style from './styles.module.scss';
 
 interface Props {
-    width: string;
+  width: string;
 }
 
 export const Avatar = ({ width }: Props) => (

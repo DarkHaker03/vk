@@ -1,8 +1,8 @@
 import { BsGrid3X3Gap } from 'react-icons/bs';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 
-import { Icon } from '../../../../shared/icon';
-import { Avatar } from '../../../../shared/avatar';
+import { Icon } from 'shared/ui/icon';
+import { Avatar } from 'shared/ui/avatar';
 import style from './styles.module.scss';
 
 export const Nav = () => (

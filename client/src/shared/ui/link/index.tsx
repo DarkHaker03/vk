@@ -4,9 +4,9 @@ import clsx from 'clsx';
 import style from './styles.module.scss';
 
 interface Props {
-    url: string;
-    children: ReactNode;
-    className?: string;
+  url: string;
+  children: ReactNode;
+  className?: string;
 }
 
 export const Link = ({ url, children, className }: Props) => (

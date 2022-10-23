@@ -3,7 +3,7 @@ import { CiMusicNote1 } from 'react-icons/ci';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 
 // ui
-import { Icon } from 'shared/icon';
+import { Icon } from 'shared/ui/icon';
 import { Logo } from './logo';
 import { Search } from './search';
 import { Nav } from './nav';
@@ -12,7 +12,7 @@ import { Nav } from './nav';
 import style from './styles.module.scss';
 
 interface Props {
-    showLoginVersion?: boolean;
+  showLoginVersion?: boolean;
 }
 
 export const Header = ({ showLoginVersion = false }: Props) => (

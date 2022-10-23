@@ -1,4 +1,4 @@
-import { Link } from 'shared/link';
+import { Link } from 'shared/ui/link';
 
 // icons - fix
 import { BiMessageRounded } from 'react-icons/bi';
@@ -54,7 +54,11 @@ const SideBar = () => (
     <ol className={style.asideLinks}>
       {links.map((link) => (
         <li className={style.asideLinksItem}>
-          <Link url={link.url} className={style.asideLinksItemContent} key={link.id}>
+          <Link
+            url={link.url}
+            className={style.asideLinksItemContent}
+            key={link.id}
+          >
             {link.icon}
             <span className={style.asideLinksItemContentTitle}>
               {link.title}
