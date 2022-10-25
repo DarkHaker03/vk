@@ -6,34 +6,29 @@
   height: 100vh;
   overflow: hidden;
   font-size: 13px;
-
-  &Links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 0 0 5px;
-    margin: 0;
-  }
-
-  &LinksItem {
-    list-style-type: none;
-
-    &Content {
-      height: 30px;
-      display: flex;
-      gap: 10px;
-      color: $sidebar-text;
-      align-items: center;
-      border-radius: 5px;
-
-      &Title {
-        width: 100%;
-        line-height: 30px;
-      }
-
-      &:hover {
-        background-color: $hover-text-color;
-      }
-    }
-  }
+}
+.asideLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.asideLinksItem {
+  list-style-type: none;
+}
+.asideLinksItemContent {
+  height: 30px;
+  display: flex;
+  gap: 10px;
+  color: $sidebar-text;
+  align-items: center;
+  border-radius: 5px;
+}
+.asideLinksItemContentTitle {
+  width: 100%;
+  line-height: 30px;
+}
+.asideLinksItemContent:hover {
+  background-color: $hover-text-color;
 }

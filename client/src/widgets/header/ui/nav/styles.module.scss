@@ -2,11 +2,10 @@
   display: flex;
   align-items: center;
   height: 100%;
-
-  &AvatarBlock {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    cursor: pointer;
-  }
+}
+.navAvatarBlock {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
 }

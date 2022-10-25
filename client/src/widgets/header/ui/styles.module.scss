@@ -4,32 +4,30 @@
   background-color: rgb(51, 51, 54);
   z-index: 120;
   height: 48px; // move to variable
+}
 
+.headerWrapper {
+  max-width: 1076px;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 12.5px;
+  padding: 0 15px;
+}
 
-  &Wrapper {
-    max-width: 1076px;
-    margin: 0 auto;
-    height: 100%;
-    font-size: 12.5px;
-    padding: 0 15px;
-  }
+.headerContent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  &Content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
+.headerNotify {
+  display: flex;
+}
 
-  &Notify {
-    display: flex;
-  }
+.headerMusicWrapper {
+  flex: 2;
+  height: 100%;
+}
 
-  &MusicWrapper {
-    flex: 2;
-    height: 100%;
-
-    &Content {
-
-    }
-  }
+.headerMusicWrapperContent {
 }

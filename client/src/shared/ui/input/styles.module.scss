@@ -1,12 +1,12 @@
 .formInput {
-    background-color: white;
-    border: none;
-    border-radius: 6px;
-    height: 40px;
-    outline: none;
-    padding: 10px;
-    font-size: 18px;
-    &:focus{
-        border: 2px solid #2c85ea;
-    }
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.formInput:focus {
+  border: 2px solid #2c85ea;
 }
