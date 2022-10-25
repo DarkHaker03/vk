@@ -10,3 +10,13 @@
         border: 2px solid #2c85ea;
     }
 }
+.inputLabel{
+    position: relative;
+}
+.passwordEye{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

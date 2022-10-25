@@ -1,5 +1,5 @@
 import React from 'react';
-import MainForm from './MainForm';
+import MainForm from 'widgets/main-form';
 
 const warningText = (
   <p>
@@ -11,9 +11,13 @@ const warningText = (
 const Registration = () => {
   const [nextStep, setNextStep] = React.useState<boolean>(false);
 
-  const handleNextStep = (e: React.FormEvent<HTMLFormElement>): void => {
+  const prev = () => {
+    setNextStep(false);
+  };
+
+  const handleNextStep = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // console.log(13);
+    setNextStep(true);
   };
 
   return nextStep ? (
@@ -21,14 +25,18 @@ const Registration = () => {
       title="Введите пароль"
       palceholder="Введите пароль"
       subTitle="Введите ваш текущий пароль привязанный к email"
+      gotToBack={nextStep}
+      prev={prev}
+      inpType="password"
     />
   ) : (
     <MainForm
-      fc={handleNextStep}
       title="Введите почту"
       palceholder="Введите email"
       subTitle="Ваша почта будет использоваться для входа в аккаунт"
       warningText={warningText}
+      handleNextStep={handleNextStep}
+      inpType="email"
     />
   );
 };

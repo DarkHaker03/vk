@@ -2,10 +2,11 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.scss';
 
+
 interface Props {
   children: React.ReactNode;
   className: string;
-  onClick?: any;
+  onClick?: (e: any) => void;
 }
 
 const Button = ({ children, className, onClick }: Props) => (
