@@ -9,12 +9,7 @@ const warningText = (
 );
 
 const Registration = () => {
-  const [nextStep, setNextStep] = React.useState<boolean>(false);
-
-  const handleNextStep = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    // console.log(13);
-  };
+  const [nextStep] = React.useState<boolean>(false);
 
   return nextStep ? (
     <MainForm
@@ -24,7 +19,6 @@ const Registration = () => {
     />
   ) : (
     <MainForm
-      fc={handleNextStep}
       title="Введите почту"
       palceholder="Введите email"
       subTitle="Ваша почта будет использоваться для входа в аккаунт"

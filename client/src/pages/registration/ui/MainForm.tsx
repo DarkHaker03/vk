@@ -9,10 +9,9 @@ interface Props {
   subTitle: string;
   palceholder: string;
   warningText?: React.ReactNode;
-  fc?: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
-const MainForm = ({ title, subTitle, warningText, palceholder, fc }: Props) => (
+const MainForm = ({ title, subTitle, warningText, palceholder }: Props) => (
   <div className={styles.registration}>
     <div className={styles.registrationBlock}>
       <img className={styles.vkIcon} src={vkIcon} alt="vk icon" />
