@@ -12,11 +12,8 @@ const router = createBrowserRouter([
     path: '/registration',
     element: <Registration />,
   },
-
 ]);
 
-const Pages: FC = () => (
-  <RouterProvider router={router} />
-);
+const Pages: FC = () => <RouterProvider router={router} />;
 
 export default Pages;

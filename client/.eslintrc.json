@@ -58,12 +58,5 @@
     ],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off"
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".ts", ".tsx"]
-      }
-    }
   }
 }
